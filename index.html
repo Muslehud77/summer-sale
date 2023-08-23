@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/951ec0bf9d.js" crossorigin="anonymous"></script>
+    <title>Summer Sale</title>
+</head>
+
+<body class="bg-gray-200 md:space-y-10">
+    <header>
+        <div class="hero max-h-full bg-[#F9F6E2] ">
+            <div class="hero-content flex-col lg:flex-row-reverse gap-16">
+                <img src="images/Summer 1.png" class="w-9/12 md:max-w-lg" />
+                <div class="text-center space-y-8">
+                    <h3 class="text-2xl font-semibold">---SALE FEVER---</h3>
+                    <h1 class="text-3xl lg:5xl font-bold">Purchase TK 200 or <br> above & <span
+                            class="text-pink-600">get 20%
+                            off</span></h1>
+                    <div class="flex flex-col justify-center items-center gap-2 font-semibold text-xl">
+                         <p class="font-bold">Use Promo Code</p>
+                       
+                        <div class="flex items-center gap-4">
+                            <p class="text-base">Click to copy the Promo code</p> <span onclick="coupon(this)" class=" hover:cursor-pointer text-white bg-pink-600 p-3 rounded-md">SELL200</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto">
+        <section class="flex flex-col-reverse lg:flex-row gap-4 justify-center">
+            <div>
+                <div class="space-y-10 flex flex-col justify-center items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-2">Kitchenware</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                            <!-- ================================== -->
+                            <div>
+
+                                <div onclick="itemClicked(this)"
+                                    class="hover:cursor-pointer card  w-72 lg:w-auto md:w-auto bg-base-100 h-96">
+                                    <div class="p-3">
+                                        <figure class="px-10 pt-10 bg-gray-300 rounded-xl p-3 h-52">
+                                            <img src="./images/prod1.png" alt="Shoes" class="rounded-xl" />
+                                        </figure>
+                                    </div>
+                                    <div class="card-body items-center text-center">
+                                        <div class="rating">
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                                checked />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                        </div>
+                                        <h2 class="card-title">Spoon Holder</h2>
+                                        <p class="text-gray-500">39.00 TK</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ================================== -->
+                            <div>
+
+                                <div onclick="itemClicked(this)"
+                                    class="hover:cursor-pointer card  w-72 lg:w-auto md:w-auto bg-base-100 h-96">
+                                    <div class="p-3">
+                                        <figure class="px-10 pt-10 bg-gray-300 rounded-xl p-3 h-52">
+                                            <img src="./images/prod2.png" alt="Shoes" class="rounded-xl" />
+                                        </figure>
+                                    </div>
+                                    <div class="card-body items-center text-center">
+                                        <div class="rating">
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                                checked />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                        </div>
+                                        <h2 class="card-title">Kitchen Accessories</h2>
+                                        <p class="text-gray-500">25.00 TK</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ================================== -->
+                            <div>
+
+                                <div onclick="itemClicked(this)"
+                                    class="hover:cursor-pointer card  w-72 lg:w-auto md:w-auto bg-base-100 h-96">
+                                    <div class="p-3">
+                                        <figure class="px-10 pt-10 bg-gray-300 rounded-xl p-3 h-52">
+                                            <img src="./images/prod3.png" alt="Shoes" class="rounded-xl" />
+                                        </figure>
+                                    </div>
+                                    <div class="card-body items-center text-center">
+                                        <div class="rating">
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                                checked />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                        </div>
+                                        <h2 class="card-title">Home Cooker</h2>
+                                        <p class="text-gray-500">49.00 TK</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- sportsware -->
+                    <div>
+                        <h2 class="text-3xl font-bold mb-2">Sportswear</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                            <!-- ================================== -->
+                            <div>
+
+                                <div onclick="itemClicked(this)"
+                                    class="hover:cursor-pointer card  w-72 lg:w-auto md:w-auto bg-base-100 h-96">
+                                    <div class="p-3">
+                                        <figure class="px-10 pt-10 bg-gray-300 rounded-xl p-3 h-52">
+                                            <img src="./images/prod4.png" alt="Shoes" class="rounded-xl" />
+                                        </figure>
+                                    </div>
+                                    <div class="card-body items-center text-center">
+                                        <div class="rating">
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                                checked />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                        </div>
+                                        <h2 class="card-title">Sports Cap</h2>
+                                        <p class="text-gray-500">49.00 TK</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ================================== -->
+                            <div>
+
+                                <div onclick="itemClicked(this)"
+                                    class="hover:cursor-pointer card  w-72 lg:w-auto md:w-auto bg-base-100 h-96">
+                                    <div class="p-3">
+                                        <figure class="px-10 pt-10 bg-gray-300 rounded-xl p-3 h-52">
+                                            <img src="./images/prod5.png" alt="Shoes" class="rounded-xl" />
+                                        </figure>
+                                    </div>
+                                    <div class="card-body items-center text-center">
+                                        <div class="rating">
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                                checked />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                        </div>
+                                        <h2 class="card-title">Full Jersey Set</h2>
+                                        <p class="text-gray-500">69.00 TK</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ================================== -->
+                            <div>
+
+                                <div onclick="itemClicked(this)"
+                                    class="hover:cursor-pointer card  w-72 lg:w-auto md:w-auto bg-base-100 h-96">
+                                    <div class="p-3">
+                                        <figure class="px-10 pt-10 bg-gray-300 rounded-xl p-3 h-52">
+                                            <img src="./images/prod6.png" alt="Shoes" class="rounded-xl" />
+                                        </figure>
+                                    </div>
+                                    <div class="card-body items-center text-center">
+                                        <div class="rating">
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                                checked />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                        </div>
+                                        <h2 class="card-title">Sneakers</h2>
+                                        <p class="text-gray-500">159.00 TK</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Furniture -->
+                    <div>
+                        <h2 class="text-3xl font-bold mb-2">Furniture</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                            <!-- ================================== -->
+                            <div>
+
+                                <div onclick="itemClicked(this)"
+                                    class="hover:cursor-pointer card  w-72 lg:w-auto md:w-auto bg-base-100 h-96">
+                                    <div class="p-3">
+                                        <figure class="px-10 pt-10 bg-gray-300 rounded-xl p-3 h-52">
+                                            <img src="./images/prod7.png" alt="Shoes" class="rounded-xl" />
+                                        </figure>
+                                    </div>
+                                    <div class="card-body items-center text-center">
+                                        <div class="rating">
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                                checked />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                        </div>
+                                        <h2 class="card-title">Single Relax Chair</h2>
+                                        <p class="text-gray-500">185.00 TK</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ================================== -->
+                            <div>
+
+                                <div onclick="itemClicked(this)"
+                                    class="hover:cursor-pointer card  w-72 lg:w-auto md:w-auto bg-base-100 h-96">
+                                    <div class="p-3">
+                                        <figure class="px-10 pt-10 bg-gray-300 rounded-xl p-3 h-52">
+                                            <img src="./images/prod8.png" alt="Shoes" class="rounded-xl" />
+                                        </figure>
+                                    </div>
+                                    <div class="card-body items-center text-center">
+                                        <div class="rating">
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                                checked />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                        </div>
+                                        <h2 class="card-title">Kids Chair</h2>
+                                        <p class="text-gray-500">299.00 TK</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ================================== -->
+                            <div>
+
+                                <div onclick="itemClicked(this)"
+                                    class="hover:cursor-pointer card  w-72 lg:w-auto md:w-auto bg-base-100 h-96">
+                                    <div class="p-3">
+                                        <figure class="px-10 pt-10 bg-gray-300 rounded-xl p-3 h-52">
+                                            <img src="./images/prod9.png" alt="Shoes" class="rounded-xl" />
+                                        </figure>
+                                    </div>
+                                    <div class="card-body items-center text-center">
+                                        <div class="rating">
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                                checked />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                            <input type="radio" name="rating-2"
+                                                class="mask mask-star-2 bg-orange-400" />
+                                        </div>
+                                        <h2 class="card-title">Flexible Sofa</h2>
+                                        <p class="text-gray-500">339.00 TK</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="space-y-4 mt-11 flex flex-col items-center">
+                <div class="bg-white p-4 rounded-xl space-y-3 w-96 ">
+                    <h3 class="text-2xl font-semibold">Have coupon?</h3>
+                    <div class="form-control">
+                        <div class="input-group">
+                            <input disabled id="discount-input" type="text" placeholder="Coupon code"
+                                class="input input-bordered" />
+                            <button onclick="applyButton()" id="discount" disabled
+                                class="btn bg-pink-600 hover:bg-pink-700 text-white px-5">Apply</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-xl space-y-3 w-96">
+                    <div id="items-list" class="space-y-4 flex flex-col items-center">
+                       
+
+                    </div>
+                    <hr>
+                    <h3 class="text-xl font-semibold">Total Price: <span class="font-light"><span
+                                id="price-wod">00</span> TK</span></h3>
+                    <h3 class="text-xl font-semibold">Discount: <span class="font-light"><span
+                                id="discount-amount">00</span> TK</span></h3>
+                    <h3 class="text-xl font-semibold">Total: <span class="font-light"><span id="total-wd">00</span>
+                            TK</span></h3>
+                    <hr>
+                    <!-- You can open the modal using ID.showModal() method -->
+                    <button disabled id="modalButton" class="btn w-full bg-pink-600 text-white hover:bg-pink-700"
+                        onclick="my_modal_4.showModal()">Make Purchase</button>
+                    <dialog id="my_modal_4" class="modal">
+                        <form method="dialog" class="modal-box w-9/12 lg:w-4/12 max-w-5xl">
+                            <div class="flex justify-center">
+                                <img src="images/congo.png" alt="">
+                            </div>
+                            <h1 class="font-bold text-center">Congratulations</h1>
+                            <p class="py-4 text-center">Your Purchase is Successful</p>
+                            <div class="modal-action flex justify-center">
+                                <!-- if there is a button, it will close the modal -->
+                                <button onclick=" gohomeButton()" class="btn bg-pink-600 text-white hover:bg-pink-700">Go
+                                    Home</button>
+                            </div>
+                        </form>
+                    </dialog>
+
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer footer-center p-4 bg-base-300 text-base-content">
+        <div>
+            <p>© Musleh 2023 - Practicing WebDeveloping</p>
+        </div>
+    </footer>
+
+    <script src="js/summer-sale.js"></script>
+</body>
+
+</html>
