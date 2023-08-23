@@ -72,9 +72,9 @@ function itemClicked(data){
     const productPrice = data.childNodes[3].childNodes[5].innerText.split(' ')[0]
     const itemList = document.getElementById('items-list');
     const div = document.createElement('div')
-    div.innerHTML = `<div class="flex justify-between gap-3 w-80">
-                            <div class="flex gap-1">
-    <div class="bg-gray-300 p-2 rounded-xl w-12"><img class="" src="${productImg.src}" alt="">
+    div.innerHTML = `<div class="flex justify-between items-center gap-3 w-80">
+                            <div class="flex items-center gap-1">
+    <div class="bg-gray-300 p-2 rounded-xl w-12 h-12"><img class="" src="${productImg.src}" alt="">
                             </div>
                             <p class="text-base w-10">${productName}</p>
 </div>
@@ -94,9 +94,9 @@ function itemClicked(data){
         if (itemToBeAdded == itemInList) {
           return 0;
         } else {
-          div.innerHTML = `<div class="flex justify-between gap-3 w-80">
-                            <div class="flex gap-1">
-    <div class="bg-gray-300 p-2 rounded-xl w-12"><img class="" src="${productImg.src}" alt="">
+          div.innerHTML = `<div class="flex justify-between items-center gap-3 w-80">
+                            <div class="flex items-center gap-1">
+    <div class="bg-gray-300 p-2 rounded-xl w-12 h-12"><img class="" src="${productImg.src}" alt="">
                             </div>
                             <p class="text-base w-10">${productName}</p>
 </div>
