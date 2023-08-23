@@ -128,6 +128,7 @@ function updateTotal(){
     }
     totalPriceWithoutDiscount.innerText = price.toFixed(2)
     totalPriceWithDiscount.innerText = (parseFloat(totalPriceWithoutDiscount.innerText-discountAmount.innerText)).toFixed(2);
+    discountUpdate();
     discountEnable();
     modalButtonEnable();
 }
@@ -138,4 +139,10 @@ function gohomeButton(){
     totalPriceWithDiscount.innerText = '00'
     discountAmount.innerText = '00'
     updateTotal();
+}
+function discountUpdate(){
+    if(parseFloat(discountAmount.innerText)>0){
+             discountAmount.innerText = ((20/100)*parseFloat(totalPriceWithoutDiscount.innerText)).toFixed(2);
+    }
+    
 }
