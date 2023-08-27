@@ -35,6 +35,7 @@ if (parseInt(totalPriceWithoutDiscount.innerText) >= 200) {
    discountButton.disabled = true; 
    discountInput.disabled = true;
    discountInput.value = "";
+   discountAmount.innerText = "00";
 }
 }
 
