@@ -36,6 +36,7 @@ if (parseInt(totalPriceWithoutDiscount.innerText) >= 200) {
    discountInput.disabled = true;
    discountInput.value = "";
    discountAmount.innerText = "00";
+
 }
 }
 
@@ -61,7 +62,6 @@ function applyButton(){
 
 function removeButton(data){
     data.parentNode.parentNode.parentNode.remove();
-    
     updateTotal();
 }
 
@@ -129,9 +129,13 @@ function updateTotal(){
     }
     totalPriceWithoutDiscount.innerText = price.toFixed(2)
     totalPriceWithDiscount.innerText = (parseFloat(totalPriceWithoutDiscount.innerText-discountAmount.innerText)).toFixed(2);
+   
     discountUpdate();
     discountEnable();
     modalButtonEnable();
+     if(discountAmount.innerText === '00'){
+        totalPriceWithDiscount.innerText = (parseFloat(totalPriceWithoutDiscount.innerText)).toFixed(2);
+    }
 }
 function gohomeButton(){
     const itemList = document.getElementById("items-list");
